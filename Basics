@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>N M Istiak Chowdhury — Teaching & Research</title>
+  <meta name="description" content="N M Istiak Chowdhury — teaching statement, CV, research, and contact.">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0b63d6;--bg:#f7f8fa;--text:#1b1b1b}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial, sans-serif;color:var(--text);background:var(--bg)}
+    .container{max-width:900px;margin:36px auto;padding:24px;background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(12,20,30,0.06)}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;flex-direction:column}
+    .brand h1{margin:0;font-size:20px}
+    .brand p{margin:0;color:gray;font-size:14px}
+    nav a{margin-left:12px;text-decoration:none;color:var(--accent);font-weight:600}
+    .hero{margin-top:18px}
+    .hero p.lead{font-size:16px;margin:0 0 12px 0;color:#333}
+    .grid{display:grid;grid-template-columns:1fr 300px;gap:24px;margin-top:18px}
+    .card{padding:16px;border-radius:10px;background:#fbfcfe;border:1px solid rgba(12,20,30,0.03)}
+    .section-title{font-size:16px;margin:0 0 12px 0}
+    footer{margin-top:26px;font-size:13px;color:gray;text-align:center}
+    a.button{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    ul.meta{list-style:none;padding:0;margin:0}
+    ul.meta li{margin:6px 0}
+    @media(max-width:880px){.grid{grid-template-columns:1fr;}.brand{align-items:flex-start}}
+    /* -- Developer notes (edit the content below) -- */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>N M Istiak Chowdhury</h1>
+        <p>Teaching · Cloud Computing · Computer Security</p>
+      </div>
+      <nav>
+        <a href="#teaching">Teaching</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="lead">Assistant / Ph.D. researcher experienced in teaching Cloud Computing, Algorithms, and Computer Security. I focus on motivating students, designing hands-on projects, and mentoring learners at all levels.</p>
+        <p>
+          <a class="button" href="#cv">Download CV (PDF)</a>
+          <a class="button" href="#teaching" style="background:#21a179;margin-left:8px">View Teaching Statement</a>
+        </p>
+      </section>
+
+      <div class="grid">
+        <div>
+          <article class="card" id="teaching">
+            <h2 class="section-title">Teaching Statement</h2>
+            <!-- Replace the paragraph below with your full teaching statement or link to a PDF -->
+            <p> Teaching is one of the primary objectives and also one of the most rewarding aspects of an academic position. My goals are to develop problem-solving skills and to inspire interest in computer science through enthusiastic, well-prepared instruction and hands-on projects.</p>
+            <p><strong>Highlights:</strong></p>
+            <ul>
+              <li>Experience: Cloud Computing, Algorithms & Data Structures, Computer Security</li>
+              <li>Online teaching experience (Zoom) & lab design</li>
+              <li>Mentored undergraduate, graduate, and high-school students</li>
+            </ul>
+            <p><a href="/docs/Teaching_Statement_Raiful_Hasan.pdf" target="_blank">Open full Teaching Statement (PDF)</a></p>
+          </article>
+
+          <article class="card" id="projects" style="margin-top:16px">
+            <h2 class="section-title">Selected Projects & Research</h2>
+            <p>Short project descriptions, links to code repositories, or selected publications can go here.</p>
+            <ul>
+              <li>Cloud lab redesign & hands-on projects</li>
+              <li>Security-focused coursework and practical assignments</li>
+            </ul>
+            <p><a href="#" target="_blank">View publications / GitHub</a></p>
+          </article>
+        </div>
+
+        <aside class="card">
+          <h3 class="section-title">Quick Info</h3>
+          <ul class="meta">
+            <li><strong>Email:</strong> <a href="mailto:raiful@uab.edu">raiful@uab.edu</a></li>
+            <li><strong>Phone:</strong> (417) 763-8192</li>
+            <li><strong>Website:</strong> <a href="https://raifulhasan.com" target="_blank">raifulhasan.com</a></li>
+            <li><strong>Location:</strong> Birmingham, AL (example)</li>
+          </ul>
+
+          <div style="margin-top:12px">
+            <a class="button" href="#contact">Contact</a>
+          </div>
+
+          <div style="margin-top:12px;font-size:13px;color:#666">
+            <strong>Download</strong>
+            <ul style="padding-left:16px;margin:8px 0">
+              <li><a href="/docs/CV_Raiful_Hasan.pdf">CV (PDF)</a></li>
+              <li><a href="/docs/Teaching_Statement_Raiful_Hasan.pdf">Teaching Statement (PDF)</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <section class="card" id="contact" style="margin-top:18px">
+        <h2 class="section-title">Contact</h2>
+        <p>If you'd like to get in touch, email me at <a href="mailto:raiful@uab.edu">raiful@uab.edu</a> or connect on <a href="#">LinkedIn</a>.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© <!--YEAR--> <span id="year"></span> N M Istiak Chowdhury · <a href="#">Privacy</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // small script to update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!--
+    How to use this starter:
+    1. Save this file as index.html.
+    2. Create a folder 'docs' in the same repo and add your PDFs (CV_Raiful_Hasan.pdf, Teaching_Statement_Raiful_Hasan.pdf).
+    3. Create a GitHub repo named `yourusername.github.io` and push index.html (and docs folder).
+    4. In repo Settings -> Pages, ensure the branch is set to main and folder is root (or use the default GitHub Pages setup).
+    5. Visit: https://yourusername.github.io
+
+    Need additional pages? Duplicate the structure and link them in the nav. To use subpages, create folders and link to them (e.g., /research/index.html).
+  -->
+</body>
+</html>
